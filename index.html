@@ -24,6 +24,36 @@
         <img src="artwork.jpg" alt="自然瞬间-带露珠的三叶草">
         <div class="description">《三叶草与露珠》 | SHIZUKU 摄影作品</div>
     </div>
+    <div class="audio-player">
+    <p>NOW PLAYING: MJ - APANAY & AREN PARK</p>
+    <audio controls loop>
+        <source src="mj apanay&aren park.flac" type="audio/mpeg">
+        您的浏览器不支持音频播放。
+    </audio>
+</div>
+
+<style>
+    .audio-player {
+        margin-top: 40px;
+        padding: 20px;
+        border-top: 1px solid #222;
+        width: 100%;
+        max-width: 400px;
+    }
+    .audio-player p {
+        font-size: 10px;
+        letter-spacing: 2px;
+        color: #555;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    audio {
+        width: 100%;
+        height: 30px;
+        filter: invert(1) hue-rotate(180deg) brightness(1.5); /* 让播放器变成深色系适应你的网页 */
+        opacity: 0.6;
+    }
+</style>
     <footer>© 2026 SHIZUKU. 基于 Vercel 强力驱动.</footer>
 </body>
 </html>
