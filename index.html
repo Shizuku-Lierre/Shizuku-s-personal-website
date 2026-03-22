@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIZUKU DESIGN | 作品集</title>
+    <title>SHIZUKU DESIGN | 作品展示</title>
     <style>
-        body { background-color: #111; color: #fff; font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; padding: 40px; }
-        header { border-bottom: 1px solid #333; padding-bottom: 20px; margin-bottom: 40px; }
-        h1 { font-size: 24px; letter-spacing: 2px; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .work-item { background: #222; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border: 1px solid #333; }
-        .work-item:hover { border-color: #666; cursor: pointer; }
-        footer { margin-top: 50px; font-size: 12px; color: #666; }
+        body { background-color: #111; color: #fff; font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; padding: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; text-align: center;}
+        header { border-bottom: 1px solid #333; padding-bottom: 20px; margin-bottom: 40px; width: 100%; max-width: 600px;}
+        h1 { font-size: 24px; letter-spacing: 2px; text-transform: uppercase;}
+        .work-display { background: #222; border: 1px solid #333; padding: 10px; max-width: 800px; width: 100%;}
+        .work-display img { width: 100%; height: auto; display: block; filter: brightness(0.9); transition: 0.3s;}
+        .work-display img:hover { filter: brightness(1); }
+        .description { margin-top: 15px; font-size: 14px; color: #999; }
+        footer { margin-top: 50px; font-size: 12px; color: #666; width: 100%;}
     </style>
 </head>
 <body>
     <header>
         <h1>SHIZUKU DESIGN</h1>
-        <p>建筑与纸艺展示 / 正在建设中...</p>
+        <p>建筑与纸艺展示 / 自然瞬间</p>
     </header>
-    <div class="grid">
-        <div class="work-item">作品图 01</div>
-        <div class="work-item">作品图 02</div>
+    <div class="work-display">
+        <img src="artwork.jpg" alt="自然瞬间-带露珠的三叶草">
+        <div class="description">《三叶草与露珠》 | SHIZUKU 摄影作品</div>
     </div>
     <footer>© 2026 SHIZUKU. 基于 Vercel 强力驱动.</footer>
 </body>
